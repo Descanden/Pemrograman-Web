@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Crimson Pro', serif; /* Font default untuk body */
+    background-color: #FAF7F2;
+    color: #333;
+    margin: 0;  
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: #FAF7F2;
+}
+
+.navbar .logo {
+    font-size: 1.8em;
+    font-weight: medium;
+}
+
+.navbar nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+.navbar nav a:hover {
+    color: #000;
+}
+
+.login {
+    background-color: #F2EBE0;
+    border: 1px solid #333;
+    border-radius: 16px;
+    padding: 10px 45px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* Hero section styles */
+.hero {
+    padding: 100px 80px;
+    display: flex;
+    align-items: center;
+    background-color: #F8F6F0;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.hero-buttons .primary,
+.hero-buttons .secondary {
+    text-decoration: none;
+    padding: 8px 30px;
+    border-radius: 35px;
+    font-weight: 600;
+    font-size: 1em; 
+}
+
+.hero-buttons .primary {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+
+.hero-buttons .secondary {
+    background-color: white;
+    color: black;
+    border: 1px solid #333;
+}
+
+/* Latest articles styles */
+.latest-articles {
+    padding: 60px 80px;
+}
+
+.latest-articles-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.latest-articles h2 {
+    font-size: 2em;
+    font-weight: 700;
+    margin: 0;
+}
+
+.see-all {
+    text-decoration: none;
+    font-weight: 600;
+    color: #333;
+}
+
+.arrow {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 5px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 7px solid #333;
+    transition: transform 0.3s ease;
+}
+
+.right-arrow {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 5px;
+    border-top: 4px solid transparent;
+    border-left: 7px solid #333;
+}
+
+.dropbtn:hover .arrow {
+    border-top: none;
+    border-bottom: 10px solid #333;
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: transparent;
+    border: none;
+    font-family: 'Crimson Pro', serif;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: 600;
+    color: #333;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.dropbtn:hover {
+    background-color: #FAF7F2;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFF;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: 600;
+}
+
+.dropdown-content a:hover {
+    background-color: #F8F6F0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Articles section styles */
+.articles {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.articles article {
+    flex: 1;
+    min-width: 280px;
+    max-width: 30%;
+    background-color: #F2EBE0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.articles article:hover {
+    transform: translateY(-10px);
+}
+
+.articles img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.article-details {
+    padding: 20px;
+}
+
+.article-details h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.article-details p {
+    color: #777;
+}
+
+/* Section Catalogue */
+.catalogue {
+    padding: 50px 80px;
+    background-color: #F8F6F0;
+    text-align: left;
+}
+
+.catalogue-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0px;
+}
+
+.catalogue-header h2 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.catalogue-header img {
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+}  
+
+.catalogue-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.catalogue-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 0px;
+}
+
+.catalogue-item h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 0px;
+    text-align: left;
+}
+
+.catalogue-item p {
+    color: #252525;
+    font-size: 1em;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.coffee-guide {
+    padding: 60px 80px;
+    background-color: #F2EBE0;
+    text-align: left;
+}
+
+.coffee-guide-header h2 {       
+    font-size: 2em;
+    font-weight: 700;
+    color: #252525;
+    margin-bottom: 40px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.coffee-guide-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.guide-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.guide-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    filter: brightness(50%);
+    margin-top: 0px;
+}
+
+.guide-item .guide-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: left;
+}
+
+.guide-item h3 {
+    font-size: 1.8em;   
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+.guide-item p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.typography {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 1.5em;
+    color: #333;
+    text-align: center;
+    margin: 20px 0;
+}

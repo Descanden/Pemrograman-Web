@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.title {
+    text-align: left;
+    margin-top: 20px;
+}
+
+table {
+    width: 50%;
+    border: "1";
+    border: 1px solid black;
+    /* margin: 20px auto; */
+}
+
+th, td {
+    border: 2px solid black;
+    text-align: left;
+    padding: 5px;
+}
+
+th {
+    background-color: yellow;
+}
+
+.senin {
+    background-color: cyan;
+}
+
+.selasa {
+    background-color: black;
+    color: white;
+}
+
+.rabu {
+    background-color: pink;
+}
