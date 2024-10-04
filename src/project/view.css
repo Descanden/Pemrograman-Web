@@ -5,7 +5,7 @@ body {
   margin: 0;  
   padding: 0;
   line-height: 1.6;
-
+}
 
 .navbar {
   display: flex;
@@ -14,24 +14,21 @@ body {
   padding: 20px 80px;
   background-color: #F2EBE0;
   margin-bottom: 0px;
-  box-shadow: #252525;
+  box-shadow: 0 4px 2px -2px #252525;
   border-radius: 8px;
   transition: box-shadow 0.3s ease;
 }
 
 .navbar:hover {
-  box-shadow: #252525;
+  box-shadow: 0 4px 8px #252525;
 }
 
-
 .navbar .logo {
-  font-size: 1.8em;
-  font-weight:bolder;
-  text-decoration: none;
-  color: inherit;
   font-size: 28px;
   font-weight: bold;
-  cursor: default; 
+  text-decoration: none;
+  color: inherit;
+  cursor: default;
 }
 
 .navbar nav a {
@@ -95,7 +92,7 @@ body {
   display: none;
   position: absolute;
   background-color: #FAF7F2;
-  box-shadow: #252525;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   min-width: 160px;
   z-index: 1;
 }
@@ -165,5 +162,96 @@ body {
   margin-top: -60px;
 }
 
-
+.opportunities {
+  padding: 100px 80px;
+  display: flex;
+  align-items: center;
+  background-color: #F2EBE0;
+  margin-bottom: 0px;
 }
+
+.opportunities-title {
+  font-size: 82px;
+  font-weight: 600;
+  color: #281B18;
+  margin-top: 0px;
+}
+
+.opportunities-description {
+  font-size: 24px;
+  font-weight: lighter;
+  line-height: 1.5;
+  max-width: 1300px;
+  margin: 0 auto;
+  color: #281B18;
+  margin-top: -50px;
+}
+
+.opportunities-example {
+  font-size: 32px;
+  font-weight: 600;
+  color: #281B18;
+  margin-top: -20px;
+  margin-bottom: 0;
+  border-bottom: 2px solid #281B18;
+  padding-bottom: 20px;
+}
+
+.farm-level {
+  padding: 0px 80px;
+  display: flex;
+  align-items: start;
+  background-color: #F2EBE0;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.farm-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #281B18;
+  margin-top: -90px; 
+  margin-bottom: -10px;
+}
+
+.farm-titles {
+  font-size: 32px;
+  font-weight: 600;
+  color: #281B18;
+  margin-bottom: 130px;
+  margin-top: 5px;
+}
+
+.farm-description {
+  font-size: 24px;
+  font-weight: lighter;
+  line-height: 1.5;
+  margin: 10px auto;
+  color: #281B18;
+  padding-bottom: 50px;
+  margin-top: -130px;
+  max-width: 700px;
+}
+
+.farm-description ul {
+  list-style-type: disc;
+  padding-left: 40px;
+}
+
+.farm-description li {
+  margin-bottom: 20px;
+}
+
+.farm-content {
+  max-width: 700px;
+}
+
+.farm-image {
+  width: 400px; 
+  height: auto;
+  margin-left: 100px;
+  margin-top: -5px;
+}
+
+
+
