@@ -10,14 +10,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="home.css">
 </head>
-
 <body>
     <header>
         <div class="navbar">
-            <div class="logo">Caffeine</div>
+            <a href="home.html" class="logo">Caffeine</a>
             <nav>
                 <a href="#">Blog</a>
-                <a href="#">Why</a>
+                <a href="view.html">Why</a>
                 <a href="#">About</a>
                 <div class="dropdown">
                     <button class="dropbtn">Coffee Guide <span class="arrow"></span></button>
@@ -26,12 +25,10 @@
                         <a href="#">Brewing Methods</a>
                         <a href="#">Coffee Recipes</a>
                     </div>
-                </div>
             </nav>
             <button class="login">Log In</button>
         </div>            
     </header>
-    
     <main>
         <section class="hero">
             <div class="hero-content">
@@ -44,11 +41,10 @@
                 </div>
             </div>
         </section>
-
         <section class="latest-articles">
             <div class="latest-articles-header">
                 <h2>Latest Articles</h2>
-                <a href="#" class="see-all">See All <span class="arrow right-arrow"></span></a>
+                <a href="#" class="see-all">See All <span class="arrow left-arrow"></span></a>
             </div>
             <div class="articles">
                 <article>
@@ -75,21 +71,6 @@
             </div>
         </section>
     </main>
-
-    <script>
-        const dropbtn = document.querySelector('.dropbtn');
-        const arrow = dropbtn.querySelector('.arrow');
-        
-        dropbtn.addEventListener('mouseenter', () => {
-            arrow.style.borderTop = 'none';
-            arrow.style.borderBottom = '7px solid #333';
-        });
-
-        dropbtn.addEventListener('mouseleave', () => {
-            arrow.style.borderTop = '7px solid #333';
-            arrow.style.borderBottom = 'none';
-        });
-    </script>
 </body>
 <section class="catalogue">
     <div class="catalogue-header">
@@ -113,7 +94,6 @@
         </div>
     </div>
 </section>
-
 <section class="coffee-guide">
     <div class="coffee-guide-header">
         <h2>Coffee Guide</h2>
@@ -143,3 +123,33 @@
     </div>
 </section>
 </html>
+<body>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h2>Caffeine</h2>
+                <p>Coffee is so much more than a beverage <br> -it's a community</p>
+            </div>
+            <div class="footer-center">
+                <div class="footer-column">
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="view.html">Why</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Coffee guide</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-column">
+                    <ul>
+                        <li><a href="#">Filter</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Equipment</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
